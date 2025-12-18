@@ -1,0 +1,276 @@
+/* =====================================================
+   ROOT VARIABLES
+===================================================== */
+:root {
+  --pink-primary: #ff6fae;
+  --pink-secondary: #ffd6e8;
+  --pink-dark: #e84a8c;
+  --pink-light: #fff0f7;
+
+  --text-dark: #2f2f2f;
+  --text-muted: #666;
+
+  --white: #ffffff;
+  --shadow-soft: 0 8px 25px rgba(0,0,0,0.08);
+  --shadow-strong: 0 12px 35px rgba(0,0,0,0.12);
+
+  --radius-small: 10px;
+  --radius-medium: 16px;
+  --radius-large: 22px;
+
+  --transition: 0.3s ease;
+}
+
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--pink-light);
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+header {
+  background: linear-gradient(135deg, var(--pink-primary), var(--pink-dark));
+  color: var(--white);
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+header img {
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  margin-bottom: 18px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+nav {
+  background-color: var(--pink-dark);
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 16px;
+  box-shadow: var(--shadow-soft);
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: var(--transition);
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: var(--white);
+  left: 0;
+  bottom: -6px;
+  transition: var(--transition);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+/* =====================================================
+   SECTION TITLES
+===================================================== */
+.section-title {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: var(--pink-dark);
+  border-left: 8px solid var(--pink-primary);
+  padding-left: 16px;
+}
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+.about {
+  background: var(--white);
+  padding: 40px;
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 70px;
+}
+
+.about p {
+  margin-bottom: 16px;
+}
+
+/* =====================================================
+   PLACE CARD
+===================================================== */
+.place-card {
+  background: var(--white);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  margin-bottom: 60px;
+  box-shadow: var(--shadow-strong);
+  transition: var(--transition);
+}
+
+.place-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.place-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.place-content {
+  padding: 35px;
+}
+
+.place-content h3 {
+  font-size: 1.9rem;
+  color: var(--pink-dark);
+  margin-bottom: 8px;
+}
+
+.place-content .location {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.place-content p {
+  margin-bottom: 16px;
+}
+
+/* LISTS */
+.place-content ul {
+  margin-left: 22px;
+  margin-bottom: 20px;
+}
+
+.place-content ul li {
+  margin-bottom: 8px;
+}
+
+/* =====================================================
+   AI SOLUTION BOX
+===================================================== */
+.ai-box {
+  background: var(--pink-secondary);
+  padding: 22px;
+  border-left: 6px solid var(--pink-primary);
+  border-radius: var(--radius-medium);
+  margin-top: 20px;
+}
+
+.ai-box strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* =====================================================
+   MAP
+===================================================== */
+.map {
+  width: 100%;
+  height: 320px;
+  margin-top: 25px;
+  border-radius: var(--radius-medium);
+  border: none;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+footer {
+  background-color: var(--pink-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 30px;
+  font-weight: 500;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.3rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .place-card img {
+    height: 220px;
+  }
+
+  .place-content {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header img {
+    width: 90px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
