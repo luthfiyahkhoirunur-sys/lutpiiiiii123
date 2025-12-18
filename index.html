@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kucing Peduli | Edukasi Sosial & Lingkungan Berbasis AI</title>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --pink-main: #ff6fae;
+      --pink-soft: #ffe0ef;
+      --pink-dark: #e84a8c;
+      --text-dark: #333;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--pink-soft);
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    /* ================= HEADER ================= */
+    header {
+      background: linear-gradient(135deg, var(--pink-main), var(--pink-dark));
+      padding: 50px 20px;
+      text-align: center;
+      color: var(--white);
+    }
+
+    header img {
+      width: 110px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 4px solid #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 15px auto 0;
+      font-size: 1.2rem;
+    }
+
+    /* ================= NAVBAR ================= */
+    nav {
+      background-color: var(--pink-dark);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ================= CONTAINER ================= */
+    .container {
+      width: 95%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 0;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      margin-bottom: 25px;
+      color: var(--pink-dark);
+      border-left: 8px solid var(--pink-main);
+      padding-left: 15px;
+    }
+
+    /* ================= ABOUT ================= */
+    .about {
+      background-color: var(--white);
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-bottom: 60px;
+    }
+
+    /* ================= PLACE CARD ================= */
+    .place-card {
+      background-color: var(--white);
+      border-radius: 18px;
+      overflow: hidden;
+      margin-bottom: 50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .place-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .place-content {
+      padding: 30px;
+    }
+
+    .place-content h3 {
+      font-size: 1.8rem;
+      color: var(--pink-dark);
+      margin-bottom: 10px;
+    }
+
+    .place-content .location {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .place-content ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .place-content ul li {
+      margin-bottom: 8px;
+    }
+
+    .ai-box {
+      background-color: var(--pink-soft);
+      padding: 20px;
+      border-left: 6px solid var(--pink-main);
+      border-radius: 12px;
+    }
+
+    /* ================= MAP ================= */
+    .map {
+      margin-top: 20px;
+      width: 100%;
+      height: 300px;
+      border-radius: 14px;
+      border: none;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background-color: var(--pink-dark);
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="https://placekitten.com/200/200" alt="Kucing Peduli">
+    <h1>🐾 Kucing Peduli</h1>
+    <p>
+      Platform edukasi sosial & lingkungan berbasis Artificial Intelligence
+      untuk membantu komunitas yang membutuhkan melalui pendekatan empati,
+      data, dan teknologi.
+    </p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Tentang</a>
+    <a href="#">Lokasi Edukasi</a>
+    <a href="#">Teknologi AI</a>
+    <a href="#">Kontak</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- ABOUT -->
+    <section class="about">
+      <h2 class="section-title">Tentang Program</h2>
+      <p>
+        <strong>Kucing Peduli</strong> adalah inisiatif digital yang menggabungkan
+        kecerdasan buatan (AI) dengan edukasi sosial dan lingkungan.
+        Program ini berfokus pada desa, komunitas rentan, dan wilayah
+        dengan keterbatasan akses informasi.
+      </p>
+      <p>
+        AI digunakan untuk menganalisis masalah lokal, menyediakan modul pembelajaran adaptif,
+        chatbot edukasi, serta pemetaan risiko lingkungan berbasis data.
+      </p>
+    </section>
+
+    <!-- PLACE 1 -->
+    <section>
+      <h2 class="section-title">Lokasi Edukasi Prioritas</h2>
+
+      <div class="place-card">
+        <img src="https://placekitten.com/900/400" alt="Desa Cisuru">
+        <div class="place-content">
+          <h3>Desa Cisuru</h3>
+          <p class="location">📍 Kabupaten Cilacap, Jawa Tengah</p>
+
+          <p>
+            Desa Cisuru menghadapi permasalahan lingkungan seperti pengelolaan sampah,
+            pencemaran air, serta rendahnya kesadaran ekologis masyarakat.
+          </p>
+
+          <strong>Tantangan Utama:</strong>
+          <ul>
+            <li>Kurangnya sistem pengelolaan sampah terpadu</li>
+            <li>Minimnya edukasi lingkungan berbasis data</li>
+            <li>Dampak kesehatan akibat pencemaran air</li>
+          </ul>
+
+          <div class="ai-box">
+            <strong>Peran AI:</strong>
+            <ul>
+              <li>Chatbot edukasi lingkungan berbasis bahasa lokal</li>
+              <li>Analisis data sampah dan kualitas air</li>
+              <li>Rekomendasi kebijakan berbasis machine learning</li>
+            </ul>
+          </div>
+
+          <iframe
+            class="map"
+            src="https://maps.google.com/maps?q=-7.4490,109.0345&z=14&output=embed">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- PLACE 2 -->
+      <div class="place-card">
+        <img src="https://placekitten.com/901/400" alt="Desa Serang">
+        <div class="place-content">
+          <h3>Desa Serang</h3>
+          <p class="location">📍 Kabupaten Cilacap, Jawa Tengah</p>
+
+          <p>
+            Desa Serang menjadi lokasi strategis untuk edukasi perubahan iklim,
+            pengelolaan sampah, dan pemberdayaan generasi muda.
+          </p>
+
+          <strong>Masalah Sosial & Lingkungan:</strong>
+          <ul>
+            <li>Kurangnya literasi perubahan iklim</li>
+            <li>Partisipasi pemuda yang masih rendah</li>
+            <li>Minimnya teknologi pendukung edukasi</li>
+          </ul>
+
+          <div class="ai-box">
+            <strong>Solusi AI:</strong>
+            <ul>
+              <li>Aplikasi pembelajaran interaktif berbasis AI</li>
+              <li>Gamifikasi edukasi lingkungan</li>
+              <li>Prediksi dampak lingkungan jangka panjang</li>
+            </ul>
+          </div>
+
+          <iframe
+            class="map"
+            src="https://maps.google.com/maps?q=-7.6660,109.0290&z=14&output=embed">
+          </iframe>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>🐱 Kucing Peduli © 2025 — Edukasi Sosial & Lingkungan Berbasis AI</p>
+  </footer>
+
+</body>
+</html>
